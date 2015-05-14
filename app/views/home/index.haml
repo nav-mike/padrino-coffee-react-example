@@ -1,6 +1,9 @@
 !!! Strict
 %html
   %head
+
+    %link{rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"}
+
     = javascript_include_tag 'jquery', 'application'
     = javascript_include_tag 'react', 'JSXTransformer'
     %script{type: 'text/jsx', src: "#{asset_path :js, 'coffee/home'}"}
