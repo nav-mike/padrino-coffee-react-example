@@ -1,0 +1,8 @@
+!!! Strict
+%html
+  %head
+    = javascript_include_tag 'jquery', 'application'
+    = javascript_include_tag 'react', 'JSXTransformer'
+    %script{type: 'text/jsx', src: "#{asset_path :js, 'coffee/home'}"}
+  %body
+    #reactApp
